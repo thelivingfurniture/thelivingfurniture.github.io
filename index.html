@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        min-width: 80%;
+    }
+
+    .navbar-brand {
+        min-width: 220px;
+        height: 70px;
+        background-image: url("image/logo.png");
+        background-size: cover;
+    }
+
+    button {
+        width: 55px;
+        height: 40px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    ul {
+        margin-left: 28vw;
+    }
+
+    .nav-item {
+        min-width: 90px;
+        margin-right: 8px;
+    }
+
+    .navicon1 {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+        background-image: url("image/navicon1.png");
+        background-size: cover;
+        position: relative;
+    }
+
+    .navicon1 input {
+        display: none;
+    }
+
+    .iconactive {
+        position: absolute;
+        top: 35px;
+        right: -15px;
+        height: 30px;
+        border: solid 1px #917C6A;
+        width: 170px;
+        border-radius: 2px;
+    }
+
+    .navicon2 {
+        width: 35px;
+        height: 35px;
+        background-image: url("image/navicon2.png");
+        background-size: cover;
+    }
+
+    @media screen and (max-width:992px) {
+        ul {
+            margin-left: 30px;
+
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        .collapse {
+            background-color: #F4EBE1;
+            margin-top: 22px;
+            width: 100vw;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+        .navicon1 {
+            display: none;
+        }
+        .navicon2 {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <nav class="container navbar navbar-expand-md navbar-light  ">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">品牌故事</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">設計家飾</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">門市一覽</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">聯絡我們</a>
+                </li>
+                <li id="search" class="navicon1">
+                    <a class="nav-link" href="#"></a>
+                    <div id="searchinput">
+                        <input type="text">
+                    </div>
+                </li>
+                <li class="navicon2">
+                    <a class="nav-link" href="#"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="brand_container">
+        <div class="brand mb-3 brand1"></div>
+        <div class="brand mb-3 brand2"></div>
+        <div class="brand mb-3 brand3"></div>
+        <div class="brand mb-3 brand4"></div>
+    </div>
+
+    <div id="newarrival">
+        <div class="new_container ">
+            <div class="new_title mb-3">NEW ARRIVAL</div>
+            <div class="new_block">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="image/new-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">thomas cole 咖啡桌</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="image/new-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">beetle 休閒椅</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="image/new-3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">alison 電視櫃組合</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="image/new-4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Uptown Sofa Tub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popular_container">
+        <div class="popular_title mb-3">MOST POPULAR</div>
+        <div class="popular_block">
+            <div class="card" style="width: 32.5rem;">
+                <img class="card-img-top" src="image/popular-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Ottoman 6尺雙人床</p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="image/popular-3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">bettle 木質電視櫃</p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="image/popular-2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">alison 深藍質感沙發</p>
+                </div>
+            </div>
+        </div>
+        <div class="popular_block">
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="image/popular-4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Ks Chair 經典單人椅</p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="image/popular-5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">GRAVITY 立燈</p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="image/popular-6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">AMI Side Table 邊几</p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="image/popular-7.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Uptown 設計感書桌</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="location">
+        <div class="location_container">
+            <div class="location_pic"></div>
+            <div class="location_text">
+
+                <div class="swiper1 swiper-container h-100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <div class="text">
+                                <div class="location_icon mb-3"></div>
+                                <h5>台北門市</h5>
+                                <p>聯絡電話：(02)2212-1488</p>
+                                <p>營業時間：Ｍon - Sun 11:00~21:00</p>
+                                <p>門市地址：台北市松山區中山路41號 </p>
+                                <p>其他資訊：提供信用卡刷卡服務</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <div class="location_icon mb-3"></div>
+                                <h5>桃園門市</h5>
+                                <p>聯絡電話：(03)4212-1488</p>
+                                <p>營業時間：Ｍon - Sun 11:00~21:00</p>
+                                <p>門市地址：桃園縣中壢市新生路199號 </p>
+                                <p>其他資訊：提供信用卡刷卡服務</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <div class="location_icon mb-3"></div>
+                                <h5>台中門市</h5>
+                                <p>聯絡電話：(04)2212-1488</p>
+                                <p>營業時間：Ｍon - Sun 11:00~21:00</p>
+                                <p>門市地址：台中市東區自由路三段41號</p>
+                                <p>其他資訊：提供信用卡刷卡服務</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <div class="location_icon mb-3"></div>
+                                <h5>高雄門市</h5>
+                                <p>聯絡電話：(07)9702-1488</p>
+                                <p>營業時間：Ｍon - Sun 11:00~21:00</p>
+                                <p>門市地址：高雄市前鎮區中華五路789號 </p>
+                                <p>其他資訊：提供信用卡刷卡服務</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="picture">
+        <div class="swiper2 swiper-container h-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide picture1"></div>
+                <div class="swiper-slide picture2"></div>
+                <div class="swiper-slide picture3"></div>
+                <div class="swiper-slide picture4"></div>
+                <div class="swiper-slide picture5"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_part">
+                <div class="footer_logo"></div>
+                <div class="footer_t">給你最好的生活品質</div>
+            </div>
+            <div class="footer_text">
+                <p>產品專區</p>
+                <p>新品上架</p>
+                <p>熱門產品</p>
+            </div>
+            <div class="footer_text">
+                <p>營業時間</p>
+                <p>Mon-Sun</p>
+                <p>10am-9pm</p>
+            </div>
+            <div class="footer_text">
+                <p>門市一覽</p>
+                <p>北部門市</p>
+                <p>中部門市</p>
+            </div>
+            <div class="footer_text">
+                <p>服務資訊</p>
+                <p>配送說明</p>
+                <p>購物指南</p>
+            </div>
+            <div class="footericon ficon1"></div>
+            <div class="footericon ficon2"></div>
+            <div class="footericon ficon3"></div>
+            <div class="footericon ficon4"></div>
+            <div class="copy">
+                <p>The Living@僅供教學使用,如有侵權,請來信告知</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="swiper-4.3.3/dist/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        var oSearch = document.querySelector("#search");
+        var oSearchinput = document.querySelector("#searchinput");
+
+        oSearch.onclick = function () {
+            oSearchinput.classList.toggle("iconactive");
+        }
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper1.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper2.swiper-container', {
+            autoplay: {
+                delay: 3000,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
