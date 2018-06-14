@@ -1,3 +1,74 @@
+.card {
+    width: 15rem;
+}
+
+.card1 {
+    width: 32.5rem;
+}
+
+.card2 {
+    width: 15rem;
+}
+
+.container {
+    min-width: 80%;
+}
+
+.navbar-brand {
+    min-width: 220px;
+    height: 70px;
+    background-image: url("image/logo.png");
+    background-size: cover;
+}
+
+button {
+    width: 55px;
+    height: 40px;
+}
+
+.navbar {
+    height: 100px;
+}
+
+ul {
+    margin-left: 28vw;
+}
+
+.nav-item {
+    min-width: 90px;
+    margin-right: 8px;
+}
+
+.navicon1 {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    background-image: url("image/navicon1.png");
+    background-size: cover;
+    position: relative;
+}
+
+.navicon1 input {
+    display: none;
+}
+
+.iconactive {
+    position: absolute;
+    top: 35px;
+    right: -15px;
+    height: 30px;
+    border: solid 1px #917C6A;
+    width: 170px;
+    border-radius: 2px;
+}
+
+.navicon2 {
+    width: 35px;
+    height: 35px;
+    background-image: url("image/navicon2.png");
+    background-size: cover;
+}
+
 .banner {
     width: 100%;
     height: 50vw;
@@ -178,7 +249,7 @@ h5 {
 
 .footer {
     width: 100%;
-    height: 18vw;
+    height: 25vw;
     position: relative;
 }
 
@@ -193,19 +264,20 @@ h5 {
 .footer_part {
     width: 25%;
     height: 13vw;
+    margin-top: 1vw;
 }
 
 .footer_text {
     width: 15%;
     height: 13vw;
-    margin-top: 2vw;
+    margin-top: 3vw;
 }
 
 .footericon {
-    min-width: 50px;
+    width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 14%;
+    bottom: 20%;
     left: 50%;
 }
 
@@ -221,7 +293,7 @@ h5 {
     left: 45%;
 }
 
-.ficon3{
+.ficon3 {
     background-image: url("image/fiocn-3.png");
     background-size: cover;
     left: 50%;
@@ -232,7 +304,6 @@ h5 {
     background-size: cover;
     left: 55%;
 }
-
 
 .footer_logo {
     width: 100%;
@@ -258,4 +329,346 @@ h5 {
     text-align: center;
     letter-spacing: 2px;
     font-size: 14px;
+}
+
+@media screen and (max-width:1200px) {
+    ul {
+        margin-left: 20vw;
+    }
+    .location_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .location_pic {
+        min-width: 650px;
+        height: 350px;
+        background-image: url("image/shop.jpg");
+        background-size: cover;
+    }
+    .location_text {
+        width: 650px;
+        height: 350px;
+        background-color: #F7F1EB;
+        position: relative;
+        margin-top: 2vw;
+    }
+    .text {
+        min-width: 70%;
+        min-height: 80%;
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+    .card {
+        width: 25rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .card {
+        width: 18rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    ul {
+        margin-left: 20px;
+    }
+    .footer {
+        width: 100%;
+        height: 30vw;
+        position: relative;
+    }
+    .footer_text {
+        width: 15%;
+        height: 13vw;
+        margin-top: 3vw;
+        font-size: 15px;
+    }
+    .ficon1 {
+        background-image: url("image/fiocn-1.png");
+        background-size: cover;
+        left: 30%;
+    }
+    .ficon2 {
+        background-image: url("image/fiocn-2.png");
+        background-size: cover;
+        left: 40%;
+    }
+    .ficon3 {
+        background-image: url("image/fiocn-3.png");
+        background-size: cover;
+        left: 50%;
+    }
+    .ficon4 {
+        background-image: url("image/fiocn-4.png");
+        background-size: cover;
+        left: 60%;
+    }
+    .footer_logo {
+        width: 100%;
+        height: 48%;
+        background-image: url("image/logo.png");
+        background-size: cover;
+    }
+    .footer_t {
+        font-size: 14pt;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 767px;
+    }
+    .collapse {
+        background-color: #F4EBE1;
+        margin-top: 22px;
+        width: 100vw;
+    }
+    ul {
+        margin-left: 20px;
+    }
+    .navicon1 {
+        display: none;
+    }
+    .navicon2 {
+        display: none;
+    }
+    .card {
+        width: 15rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+    .location_pic {
+        min-width: 500px;
+        height: 280px;
+    }
+    .location_text {
+        width: 500px;
+        height: 280px;
+    }
+    .footer {
+        width: 100%;
+        height: 55vw;
+        position: relative;
+    }
+    .footer_container {
+        justify-content: center;
+    }
+    .footer_part {
+        margin: 0 50px;
+        width: 60%;
+        height: 23vw;
+        margin-top: 1vw;
+    }
+    .footer_text {
+        width: 25%;
+        height: 13vw;
+        text-align: center;
+        margin-top: 1vw;
+    }
+    .footericon {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+    }
+    .ficon1 {
+        left: 30%;
+    }
+    .ficon2 {
+        left: 40%;
+    }
+    .ficon3 {
+        left: 50%;
+    }
+    .ficon4 {
+        left: 60%;
+    }
+    .copy {
+        width: 100%;
+        bottom: 0%;
+        left: 0%;
+    }
+    .text {
+        font-size: 15px;
+        top: 52%;
+        left: 53%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .footer {
+        width: 100%;
+        height: 65vw;
+    }
+    .card {
+        width: 13rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .brand {
+        width: 100%;
+        height: 45vw;
+        background-size: cover;
+    }
+    .footericon {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+    .location_pic {
+        min-width: 400px;
+        height: 250px;
+    }
+    .location_text {
+        width: 400px;
+        height: 250px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .text {
+        min-width: 70%;
+        min-height: 80%;
+        position: absolute;
+        font-size: 13px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .card {
+        width: 11rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width:460px) {
+    ul {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .navbar-brand {
+        min-width: 180px;
+        height: 50px;
+        background-image: url("image/logo.png");
+        background-size: cover;
+    }
+    .navbar {
+        height: 60px;
+    }
+    .collapse {
+        margin-top: 2px;
+    }
+    .card {
+        width: 10rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+    .location_pic {
+        min-width: 370px;
+        height: 250px;
+    }
+    .location_text {
+        width: 370px;
+        height: 250px;
+    }
+    .location_icon {
+        width: 25px;
+        height: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .text p {
+        letter-spacing: 0px;
+    }
+    .text {
+        font-size: 13px;
+        top: 58%;
+        left: 53%;
+    }
+    .footer {
+        width: 100%;
+        height: 75vw;
+    }
+    .footer_t {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    .footer_text {
+        font-size: 13px;
+    }
+    .copy {
+        font-size: 12px;
+    }
+    .picture {
+        width: 100%;
+        height: 55vw;
+        margin-top: 8vw;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .card {
+        width: 9rem;
+    }
+    .card1 {
+        width: 50rem;
+    }
+    .ficon1 {
+        left: 15%;
+    }
+    .ficon2 {
+        left: 35%;
+    }
+    .ficon3 {
+        left: 55%;
+    }
+    .ficon4 {
+        left: 75%;
+    }
+    .location_pic {
+        min-width: 320px;
+        height: 220px;
+    }
+    .location_text {
+        width: 320px;
+        height: 220px;
+    }
+    .text {
+        font-size: 13px;
+        top: 52%;
+        left: 53%;
+    }
+    .navbar-toggler-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button {
+        position: relative;
+        width: 45px;
+        height: 35px;
+    }
 }
