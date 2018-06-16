@@ -324,11 +324,101 @@ h5 {
     width: 40%;
     height: 2vw;
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     left: 30%;
     text-align: center;
     letter-spacing: 2px;
     font-size: 14px;
+}
+
+/*    living story   */
+
+.story_banner {
+    width: 100%;
+    height: 40vw;
+    background-image: url("image/story_banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.story_text {
+    width: 100%;
+    background-color: black;
+}
+
+.story_logo {
+    width: 250px;
+    height: 42px;
+    margin: auto;
+    background-image: url("image/logo2.png");
+    background-size: cover;
+}
+
+.story_block {
+    width: 100%;
+    padding: 80px 150px;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.story_sign {
+    width: 180px;
+    height: 50px;
+    background-image: url("image/sign.png");
+    background-size: cover;
+    float: right;
+}
+
+.story_designer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+}
+
+.designer {
+    width: 300px;
+    height: 400px;
+    background-image: url("image/designer.jpg");
+    background-size: cover;
+}
+
+.designer_text {
+    width: 58%;
+    height: 100%;
+    padding: 30px 80px;
+}
+
+.story_youtube {
+    width: 100%;
+    background-color: #F0F0F0;
+    margin-top: 5vw;
+}
+
+.youtube {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.video {
+    width: 100%;
+    height: 505px;
+}
+
+.youtube_text {
+    width: 100%;
+    padding: 50px 220px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width:1200px) {
@@ -426,6 +516,24 @@ h5 {
         font-size: 14pt;
         letter-spacing: 3px;
     }
+    .youtube {
+        max-width: 700px;
+    }
+    .video {
+        width: 100%;
+        height: 350px;
+    }
+    .youtube_text {
+        padding: 50px 120px;
+    }
+    .designer_text {
+        width: 72%;
+        height: 100%;
+        padding: 30px 30px;
+    }
+    .story_block {
+        padding: 80px 100px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -499,13 +607,34 @@ h5 {
     }
     .copy {
         width: 100%;
-        bottom: 0%;
+        bottom: 5%;
         left: 0%;
     }
     .text {
         font-size: 15px;
         top: 52%;
         left: 53%;
+    }
+    .story_designer {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 5vw;
+    }
+    
+    .designer {
+        width: 300px;
+        height: 400px;
+        background-image: url("image/designer.jpg");
+        background-size: cover;
+    }
+    
+    .designer_text {
+        width: 70%;
+        height: 100%;
+        padding: 30px 0px;
     }
 }
 
@@ -558,6 +687,43 @@ h5 {
     }
     .card1 {
         width: 50rem;
+    }
+    .story_designer {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 5vw;
+    }
+    
+    .designer {
+        width: 300px;
+        height: 400px;
+        background-image: url("image/designer.jpg");
+        background-size: cover;
+    }
+    
+    .designer_text {
+        width: 80%;
+        height: 100%;
+        padding: 30px 0px;
+    }
+    .youtube_text {
+        width: 100%;
+        padding: 50px 80px;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+    .youtube {
+        max-width: 450px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+    
+    .video {
+        width: 100%;
+        height: 250px;
     }
 }
 
@@ -626,6 +792,13 @@ h5 {
         height: 55vw;
         margin-top: 8vw;
     }
+    .story_banner {
+        height: 45vw;
+    }
+    .designer {
+        width: 230px;
+        height:280px;
+    }
 }
 
 @media screen and (max-width:405px) {
@@ -671,4 +844,36 @@ h5 {
         width: 45px;
         height: 35px;
     }
+    .story_logo {
+        width: 180px;
+        height: 30px;
+    }
+    
+    .story_block {
+        padding: 80px 50px;
+    }
+    .youtube {
+        max-width: 360px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+    
+    .video {
+        width: 100%;
+        height: 220px;
+    }
+    .youtube_text {
+        width: 100%;
+        padding: 50px 30px;
+    }
+    .youtube_text p{
+        font-size: 15px;
+    }
+    h4 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    
 }
