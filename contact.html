@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="container navbar navbar-expand-md navbar-light  ">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="story.html">品牌故事</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="design.html">設計家飾</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#location">門市一覽</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                </li>
+                <li id="search" class="navicon1">
+                    <a class="nav-link" href="#"></a>
+                    <div id="searchinput">
+                        <input type="text">
+                    </div>
+                </li>
+                <li class="navicon2">
+                    <a class="nav-link" href="#"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact_banner"></div>
+
+    <div class="contact_section">
+        <div class="contact_pic">
+            <div class="activity_pic pic1"></div>
+            <div class="activity_pic pic2"></div>
+        </div>
+        <div class="contact_wrap">
+            <div class="comment">
+                <p>歡迎您使用「客戶服務諮詢電話」或下方留言表格與我們聯繫，我們將會請專人回覆您的問題！。 ( * 為必填欄位 ) Please list any other comments or info you may want
+                    us to know about. ( * Required items )</p>
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">公司名稱</div>
+                <input class="contact_input" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">* 姓名</div>
+                <input class="contact_input" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">* 性別</div>
+                <div class="radiobox">
+                    <div class="inputextbox">
+                        <input type="radio" name="FO_Fsex" id="radio1" value="男">男</div>
+                    <div class="inputextbox">
+                        <input type="radio" name="FO_Fsex" id="radio2" value="女">女</div>
+                </div>
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">* 信箱</div>
+                <input class="contact_input" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">* 電話</div>
+                <input class="contact_input" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">* 手機</div>
+                <input class="contact_input" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">聯絡地址</div>
+                <input class="contact_input2" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">問題主旨</div>
+                <input class="contact_input2" type="text">
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">問題類型</div>
+                <select class="contact_input2" name="FO_cat_id">
+                    <option value="1">產品訊息:故訴我關於A的產品</option>
+                    <option value="2">訂單狀態：我希望有一個更新訂單</option>
+                    <option value="3">裝運訊息：我想知道關於送貨的東西</option>
+                    <option value="4">庫存查詢：我想知道商品有沒有庫存</option>
+                    <option value="5">退(換)貨：我想辦理訂單取消、退/換貨</option>
+                    <option value="6">其他問題：我有其它關於家俱問題</option>
+                    <option value="7">異業結合：品牌合作</option>
+                </select>
+            </div>
+            <div class="contact_data">
+                <div class="contact_title">問題內容</div>
+                <textarea class="contact_input3" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contactbtn">
+                <button type="button" class="btn btn-primary ">重填資料</button>
+                <button type="button" class="btn btn-primary ">送出訊息</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="swiper-4.3.3/dist/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script>
+
+    var oSearch = document.querySelector("#search");
+    var oSearchinput = document.querySelector("#searchinput");
+
+    oSearch.onclick = function () {
+        oSearchinput.classList.toggle("iconactive");
+    }
+</script>
+
+</html>
